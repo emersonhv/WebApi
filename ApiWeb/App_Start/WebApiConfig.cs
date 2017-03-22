@@ -17,8 +17,8 @@ namespace ApiWeb
             config.Formatters.JsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
             // Web API routes
 
-            var cors = new EnableCorsAttribute("http://localhost:51918/", "*", "*");
-            config.EnableCors();
+            var cors = new EnableCorsAttribute("*", "*", "*");
+            config.EnableCors(cors);
 
             config.MapHttpAttributeRoutes();
 

@@ -196,6 +196,7 @@
     <Content Include="Global.asax" />
     <Content Include="Index.html" />
     <Content Include="Web.config" />
+    <Content Include=".gitignore" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\DependencyConfig.cs" />
